@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0rem 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* section{
+    scroll-padding-top: 100px;
+    scroll-margin-top: 60px;
+} */
+
+.main-header{
+    padding: 2% 0;
+}
+
+.navigation{
+    display: flex;
+    box-shadow: 0px 1px 0.2px 0.2px #00000026;
+    padding-bottom: 2%;
+}
+
+#logo{
+    width : 4rem;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu-items{
+    margin: 0 1rem;
+    height: 2rem;
+    padding: 0.2rem;
+}
+
+.main-menu a{
+    font-size: larger;
+    color: #29abe2;
+    padding-bottom: 1rem;
+}
+
+.main-menu li{
+    transition: border-bottom 0.2s;
+}
+
+.main-menu li:hover a{
+    border-bottom: 2px solid #172476;
+}
+
+#menu-item-2 input[type="search"]{
+    border: none;
+    outline: none;
+    border: 1px solid #29abe2;
+    box-sizing: border-box;
+    padding: 0.4rem;
+    border-radius: 2%;
+    color: grey;
+    height: 2rem;
+    margin-right: 0.6rem;
+    margin: auto;
+}
+
+#search-icon{
+    display: inline-block;
+    font-size: 1.4rem;
+    rotate: 315deg;
+}
+
+#menu-item-6{
+    background-color: #29abe2;
+    color: #ffffff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 2%;
+    transition: background-color 0.2s, border 0.2a;
+}
+
+#menu-item-6:hover{
+    border: 1px solid #29abe2;
+    background-color: #ffffff;
+}
+
+#menu-item-6 a{
+    color: #ffffff;
+}
+
+#menu-item-6:hover a{
+    color: #29abe2;
+    border-bottom: none;
+}
+
+/* Landing Page Start */
+
+#landing-page{
+    display: flex;
+    padding: 2rem;
+    background-image:repeating-linear-gradient(135deg, #29aae236 40%, transparent 60%);
+}
+
+.course-overview{
+    margin: 1rem;
+}
+
+.course-overview h1{
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.course-overview #rating{
+    font-size: 2rem;
+    color : gold;
+}
+
+.course-overview .reviews{
+    font-size: 1.2rem;
+    color: #385b69;
+}
+
+.course-overview .reviews:nth-child(2){
+    color: #29abe2;
+}
+
+.course-overview p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 1rem 0;
+}
+
+.course-overview ul li{
+    font-size: 1.2rem;
+    margin: 0.6rem;
+    margin-left: 0;
+}
+
+.course-overview ul li span{
+    background-color: #76bbd8;
+    border-radius: 10%;
+    padding: 0.2rem;
+    color: #ffffff;
+    margin-right: 0.4rem;
+}
+
+.course-image{
+    background-size: cover;
+    align-content: center;
+}
+
+.course-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    width: 14rem;
+    height: 2rem;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.apply-now{
+    background-color: #29abe2;
+}
+
+.apply-now:hover{
+    background-color: #ffffff;
+    color: #29abe2;
+    border: 1px solid #29abe2;
+}
+
+.download-brochure{
+    border: 1px solid #29abe2;
+    color: #385b69;
+}
+
+/* Landing Page End */
+
+
+/* Key Highlights Start */
+
+#key-highlights{
+    box-shadow: 1px 1px 1px 1px #696c6d5e;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.highlights{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
+
+.highlights li{
+    flex: 1 0 32%;
+    margin: 0.6% 0;
+    font-weight: 600;
+}
+
+.highlights li .icons{
+    margin-right: 0.4rem;
+}
+
+.highlights li .icons img{
+    width: 1rem;
+}
+
+/* Key Highlights End */
+
+/* Course Details Start */
+
+#course-details nav{
+    box-shadow: 0px 1px 0.2px 0.2px #00000026;
+    margin-bottom: 2%;
+    /* position: sticky;
+    top: 0; */
+}
+
+#course-details ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#course-details ul li a{
+    padding: 0.8rem 0;
+    font-size: 1.2rem;
+    color: #29abe2;
+    transition: border 0.2s;
+}
+
+#course-details ul li a:hover {
+    border-bottom: 2px solid #172476;
+}
+
+#course-details ul li:last-child{
+    margin-left: auto;
+    background-color: #29abe2;
+    padding: 0.8rem;
+    border-radius: 4%;
+}
+
+#course-details ul li:last-child a{
+    color: #ffffff;
+}
+
+#course-details ul li:last-child:hover a{
+    color: #29abe2;
+}
+
+#course-details ul li:last-child:hover{
+    background-color: #ffffff;
+    border: 1px solid #29abe2;
+}
+
+#course-details ul li:last-child a{
+    border: none;
+}
+
+#overview p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#fees{
+    background-color: #29aae236;
+    box-shadow: 1px 0px 1px 1px #00000026;
+    margin: 2rem 0;
+    padding-bottom: 4rem;
+}
+
+#fees h2{
+    color: #14a7d4;
+    padding: 1rem 1.8rem;
+    font-size: 2rem;
+}
+
+.course-fee{
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    border-top: 1px solid #29abe2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1%;
+    box-shadow: 1px 0px 1px 1px #00000026;
+} 
+
+#fees .courses-offered{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+    margin: 1rem auto;
+    flex-basis: 16rem;
+    box-shadow: 0.4px 0.4px 0.4px 0.4px #00000026;
+    padding: 1.6rem;
+    text-align: center;
+    background-color: #14a7d4;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 2%;
+}
+
+.courses-offered .course-title{
+    background-color: #ffffff;
+    color: #14a7d4;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-radius: 2%;
+}
+
+#fees .courses-offered .course-info{
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.course-price, .enroll-now-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.6rem;
+}
+
+.course-price{
+    background-color: #172476;
+    border: 1px solid #ffffff;
+}
+
+.enroll-now-btn{
+    color: #172476;
+    border: none;
+    outline: none;
+}
+
+.enroll-now-btn:hover{
+    background-color: #1724765d;
+    color: #ffffff;
+}
+
+/* Course Curriculum Start */
+
+#course-curriculum {
+    box-shadow: 0.2px 1px 0.4px 0.4px #00000026;
+    font-size: 1.2rem;
+}
+
+#course-curriculum h2{
+    display: inline-block;
+    color: #14a7d4;
+    font-size: 2rem;
+    margin-right: 40%;
+}
+
+.curriculum .modules{
+    box-shadow: 0.2px 1px 0.4px 0.4px #00000026;
+    padding: 2rem;
+    font-weight: 600;
+}
+
+
+/* Course Curriculum End */
+
+/* Course Certification Start */
+
+#course-certification{
+    margin-top: 4rem;
+}
+
+#course-certification h2{
+    color: #14a7d4;
+    font-size: 2rem;
+}
+
+#course-certification img{
+    width: 60%;
+    margin: 2rem 14rem;
+}
+
+/* Course Certification End */
+
+/* Course Reviews Start */
+
+#course-reviews{
+    background-color: #29aae236;
+    margin-top: 4rem;
+}
+
+#course-reviews h2{
+    color: #14a7d4;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+}
+
+#course-reviews .testimonial-reviews{
+    display: flex;
+    gap: 2rem;
+}
+
+#course-reviews .testimonial-reviews .reviewers{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.4rem;
+    box-shadow: 0.4px 0.4px 0.4px 0.4px #00000026;
+    padding: 1.6rem;
+    text-align: center;
+    background-color: #14a7d4;
+    border-radius: 2%;
+}
+
+.reviewers h4{
+    background-color: #fff;
+    font-size: 1.4rem;
+    color:#14a7d4;
+    padding: 0.6rem;
+}
+
+.reviewers p{
+    font-size: 1.2rem;
+    color:#ffffff;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+/* Course Reviews End */
+
+/* FAQs Start */
+
+#faqs h2{
+    display: inline-block;
+    color: #14a7d4;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+#faqs .course-faqs{
+    box-shadow: 0.2px 1px 0.4px 0.4px #00000026;
+    font-size: 1.2rem;
+}
+
+#faqs .faq .question, #faqs .faq .answer{
+    box-shadow: 0.2px 1px 0.4px 0.4px #00000026;
+    padding: 1rem;
+}
+
+#faqs .faq .question {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+#faqs .faq .answer{
+    display: none;
+}
+
+#faqs .faq .question .arrow{
+    cursor: pointer;
+    font-size: 2rem;
+    rotate: 90deg;
+}
+
+/* FAQs End */
+
+/* Course Details End */
+
+/* Footer Start */
+
+footer{
+    background-color: #29aae2c9;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+footer ul h2{
+    margin: 1rem 0;
+    color: #091352;
+    border-bottom: 2px solid #091352;
+    text-align: center;
+}
+
+footer ul li{
+    margin: 0.4rem 0;
+}
+
+footer ul li a{
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+footer ul li a:hover{
+    color: #091352;
+    font-size: 1.2rem;
+}
+
+footer ul:last-child li{
+    display: inline-block;
+    margin-left: 0.2rem;
+}
+
+footer ul:last-child img{
+    height: 20px;
+}
+
+footer ul:last-child img:hover{
+    scale: 1.2;
+}
+
+/* Footer End */

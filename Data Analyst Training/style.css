@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color : #FF7F3E;
+    --secondary-color : #604CC3;
+    --teritiary-color : #1FA5DE;
+    --shadow-color : #0000001A;
+    --section-padding : 8rem;
+    --section-margin : 4rem;
+}
+
+body{
+    font-family: "Josefin Sans";
+    background-color: #1fa5de71;
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url("./fonts/Josefin_Sans/static/JosefinSans-Regular.ttf");
+}
+
+section{
+    margin-top: var(--section-margin);
+    padding: 0rem var(--section-padding);
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    box-shadow: 1px 2px 4px var(--shadow-color);
+}
+
+.apply-now-btn, #submit-btn{
+    border: none;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.apply-now-btn:hover, #submit-btn:hover{
+    background-color: var(--primary-color);
+}
+
+#submit-btn{
+    width: 100%;
+}
+
+form{
+    margin: 2rem;
+}
+
+label{
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border : 2px solid var(--shadow-color);
+    font-size: 0.9rem;
+    margin: 1.2rem 0rem;
+}
+
+fieldset{
+    border: none;
+    background-color: #ffffff63;
+    border-radius: 0.4rem;
+}
+
+legend{
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+    margin: 0rem auto;
+    color: #FFFFFF;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+h2{
+    color: var(--secondary-color);
+    font-weight: bolder;
+    text-align: center;
+    padding: 0.4rem;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.flex-container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Header Styles Start */
+
+header{
+    position: sticky;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px var(--shadow-color);
+    padding: 0.8rem 0;
+}
+
+.menu{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu #logo{
+    width: 4rem;
+}
+
+/* Header Styles End */
+
+
+/* Welcome Section Styles Start  */
+
+.course-brief, .course-image{
+    flex-basis: 30rem;
+}
+
+.course-brief h1 {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    margin: 1rem 0;
+    line-height: 1.4;
+    font-size: 2rem;
+}
+
+.course-brief p{
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 2rem 0;
+}
+
+.course-brief p strong{
+    color: var(--secondary-color);
+    margin: 2rem 0;
+}
+
+.course-image{
+    align-self: center;
+}
+
+.course-image img{
+    width: 100%;
+    height: auto;
+}
+
+/* Welcome Section Styles End  */
+
+
+/* Placement Section Styles Start  */
+
+#placement{
+    box-shadow: 1px 1px 1px 1px var(--shadow-color);
+    padding-bottom: 2rem;
+}
+
+.placement-stats{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.placement-stats img{
+    min-width: 100px;
+    max-width: 300px;
+}
+
+/* Placement Section Styles End  */
+
+
+/* Course Insights Section Styles Start  */
+
+#course-insights ul{
+    background-image: linear-gradient(45deg, var(--secondary-color), var(--teritiary-color));
+    padding: 2rem;
+}
+
+#course-insights ul li{
+    background-color: #FFFFFF;
+    flex-basis: 14rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 2rem;
+}
+
+#course-insights ul li h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Course Insights Section Styles End  */
+
+
+/* Course Instructors Section Styles Start  */
+
+.instructors{
+    justify-content: center;
+}
+
+.instructors .instructor{
+    flex-basis: 30rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #604cc350;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.instructors .instructor img{
+    height: 30rem;
+    border-radius: 10%;
+}
+
+.instructors .instructor div{ 
+    margin-top: 1.2rem;
+    line-height: 2.2rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
+}
+
+.instructors .instructor div h3{
+    font-size: 2rem;
+    color: #604CC3;
+}
+
+.instructors .instructor div p{
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+/* Course Instructors Section Styles End  */
+
+
+/* Course Curriculum Section Styles Start  */
+
+.modules{
+    line-height: 2.2rem;
+    box-shadow: 1px 1px 1px 1px #7BC9DF;
+    padding: 1rem;
+}
+
+.modules h4{
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+.modules p{
+    font-size: 1.2rem;
+}
+
+/* Course Curriculum Section Styles End  */
+
+
+/* Tools and Technologies Section Styles End  */
+
+#tools-technologies li{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.8rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    box-shadow: 1px 1px 1px 1px #7BC9DF;
+}
+
+#tools-technologies li img{
+    width: 2rem;
+}
+
+#tools-technologies li:last-child{
+    box-shadow: none;
+    margin-top: 2rem;
+}
+
+/* Tools and Technologies Section Styles End  */
+
+
+/* Pricing Plans Section Styles Start  */
+
+.program-fees{
+    background-color: var(--teritiary-color);
+    width: 40%;
+    margin: auto;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+.program-fees p{
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    font-weight: bolder;
+}
+
+.program-fees button{
+    width: 100%;
+}
+
+/* Pricing Plans Section Styles End  */
+
+
+/* Reach Us Section Styles Start */
+
+#reach-us div{
+    flex-wrap: nowrap;
+    font-size: 1.2rem;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+input[name="code"]{
+    width: 18%;
+}
+
+input[name="mobile"]{
+    width: 80%;
+}
+
+#reach-us div p{
+    line-height: 1.4;
+    margin: 1rem 0rem;
+}
+
+#reach-us .insights{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    padding: 1rem;;
+}
+
+#reach-us .insights li{
+    list-style-type: "\2756";
+    list-style-position: inside;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+
+/* Reach Us Section Styles End  */
+
+
+/* Review Section Styles Start */
+
+#reviews .review-images {
+    justify-content: space-around;
+}
+
+#reviews .review-images img{
+    width: 20rem;
+}
+
+/* Review Section Styles End */
+
+
+/* Contact us Section Styles Start */
+
+#contact-us{
+    width: 80%;
+    margin-left:  auto;
+    margin-right:  auto;
+}
+
+/* Contact us Section Styles End */
+
+
+/* Footer Styles Start  */
+
+footer{
+    background-color: var(--secondary-color);
+    margin-top: var(--section-margin);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+footer .social-media-links{
+    flex-direction: column;
+}
+
+footer .logo-img{
+    width: 60%;
+}
+
+footer img{
+    width: 2rem;
+    height: auto;
+}
+
+footer div:last-child{
+    font-size: 1.2rem;
+}
+
+footer div:last-child li{
+    margin: 1rem 0;
+}
+
+footer div:last-child li a{
+    color: #FFFFFF;
+}
+
+/* Footer Styles End  */
+
+
+/* Media Queries  */
+
+@media only screen and (max-width: 700px) {
+
+    .flex-container{
+        flex-direction: column;
+    }
+    
+    .apply-now-btn, #submit-btn{
+        margin-top: 1rem;
+    }
+    
+    header .btn{
+        background-color: transparent;
+        border: none;
+        width: 100vw;
+        box-shadow: none;
+        color: var(--secondary-color);
+    }
+
+    .btn:hover{
+        background-color: var(--secondary-color);
+        color: #FFFFFF;
+    }
+  }
